@@ -42,16 +42,6 @@ O presente trabalho apresenta o desenvolvimento da interface e arquitetura de in
 
 ## Documentação acadêmica
 
-A documentação completa do projeto está disponível no arquivo PDF abaixo.
-
-**Arquivo:** `MEU SUS ABNT.pdf`
-
-## Documentação acadêmica
-
-A documentação completa do projeto está disponível abaixo.
-
-## Documentação acadêmica
-
 A documentação completa do projeto está disponível abaixo.
 
 [Acessar a documentação completa em PDF](<MEU SUS ABNT.pdf>)
