@@ -38,8 +38,6 @@ O presente trabalho apresenta o desenvolvimento da interface e arquitetura de in
 - CSS
 - JavaScript
 
-**Outras tecnologias:**  
-[Edite aqui, se necessário.]
 
 
 ## Documentação acadêmica
