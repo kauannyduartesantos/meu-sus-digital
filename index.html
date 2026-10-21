@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Protótipo acadêmico do Meu SUS Digital.">
+  <title>Meu SUS Digital | Protótipo acadêmico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">+</div>
+        <div><strong>Meu SUS Digital</strong><small>Saúde ao seu alcance</small></div>
+      </div>
+      <div class="demo-label">PROTÓTIPO ACADÊMICO</div>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button class="nav-link active" data-page="inicio"><span class="nav-icon">⌂</span> Início</button>
+        <button class="nav-link" data-page="consultas"><span class="nav-icon">▦</span> Consultas</button>
+        <button class="nav-link" data-page="exames"><span class="nav-icon">▤</span> Meus exames</button>
+        <button class="nav-link" data-page="vacinas"><span class="nav-icon">✚</span> Vacinas</button>
+        <button class="nav-link" data-page="medicamentos"><span class="nav-icon">▥</span> Medicamentos</button>
+        <button class="nav-link" data-page="prontuario"><span class="nav-icon">▧</span> Prontuário</button>
+        <button class="nav-link" data-page="fila"><span class="nav-icon">◷</span> Token Fila</button>
+        <button class="nav-link" data-page="telemedicina"><span class="nav-icon">▣</span> Telemedicina</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="nav-link" data-page="perfil"><span class="nav-icon">◉</span> Meu perfil</button>
+        <p class="sidebar-note">Este ambiente é demonstrativo. Não insira dados pessoais reais.</p>
+      </div>
+    </aside>
+
+    <main class="main-area" id="conteudo">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <div class="breadcrumb">Portal do cidadão <span>/</span> <strong id="breadcrumbCurrent">Início</strong></div>
+        <div class="top-actions">
+          <button class="icon-button" id="fontButton" aria-label="Aumentar tamanho do texto" title="Aumentar texto">A+</button>
+          <button class="icon-button" id="contrastButton" aria-label="Alternar alto contraste" title="Alternar alto contraste">◐</button>
+          <button class="icon-button" id="themeButton" aria-label="Alternar modo escuro" title="Alternar modo escuro">☾</button>
+          <button class="profile-chip" data-page="perfil" aria-label="Abrir perfil"><span class="avatar">U</span><span class="profile-chip-text">Usuário demo</span><span>⌄</span></button>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <section class="page-section active" id="page-inicio">
+          <div class="welcome-row">
+            <div>
+              <p class="eyebrow">ÁREA DO CIDADÃO</p>
+              <h1>Olá, Usuário! <span aria-hidden="true">👋</span></h1>
+              <p class="muted">Acesse seus serviços de saúde de forma simples e organizada.</p>
+            </div>
+            <div class="date-pill"><span aria-hidden="true">▦</span> Seu espaço de saúde</div>
+          </div>
+
+          <div class="notice-banner">
+            <div class="notice-icon" aria-hidden="true">i</div>
+            <div><strong>Ambiente de demonstração</strong><p>As informações exibidas são fictícias e servem apenas para apresentar as funcionalidades do projeto acadêmico.</p></div>
+            <button class="close-notice" id="closeNotice" aria-label="Fechar aviso">×</button>
+          </div>
+
+          <div class="section-heading"><div><h2>Seu Cartão Nacional de Saúde</h2><p class="muted">Exemplo visual de identificação do cidadão</p></div><span class="status-pill status-green">● Dados fictícios</span></div>
+          <article class="sus-card">
+            <div class="sus-card-top"><div class="sus-symbol">✚ <span>SAÚDE</span></div><span>MINISTÉRIO DA SAÚDE · DEMONSTRAÇÃO</span></div>
+            <div class="sus-card-body">
+              <div><p class="card-label">NOME DO CIDADÃO</p><h3>Usuário de Demonstração</h3><p class="card-label">CARTÃO NACIONAL DE SAÚDE (CNS)</p><div class="cns-number">000 0000 0000 0000</div></div>
+              <div class="fake-qr" aria-label="QR Code ilustrativo"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="sus-card-bottom"><span>Documento ilustrativo — não válido para atendimento</span><span>Meu SUS Digital</span></div>
+          </article>
+
+          <div class="section-heading quick-heading"><div><h2>Acesso rápido</h2><p class="muted">Encontre o serviço que você precisa</p></div></div>
+          <div class="quick-grid">
+            <button class="quick-card" data-page="exames"><span class="quick-icon blue">▤</span><span><strong>Meus exames</strong><small>Resultados e solicitações</small></span><span class="arrow">→</span></button>
+            <button class="quick-card" data-page="consultas"><span class="quick-icon purple">▦</span><span><strong>Consultas</strong><small>Agendamentos e histórico</small></span><span class="arrow">→</span></button>
+            <button class="quick-card" data-page="medicamentos"><span class="quick-icon green">▥</span><span><strong>Medicamentos</strong><small>Receitas e medicamentos</small></span><span class="arrow">→</span></button>
+            <button class="quick-card" data-page="prontuario"><span class="quick-icon orange">▧</span><span><strong>Prontuário</strong><small>Histórico e documentos</small></span><span class="arrow">→</span></button>
+            <button class="quick-card" data-page="fila"><span class="quick-icon teal">◷</span><span><strong>Token Fila</strong><small>Acompanhe a fila (demo)</small></span><span class="arrow">→</span></button>
+            <button class="quick-card" data-page="telemedicina"><span class="quick-icon pink">▣</span><span><strong>Telemedicina</strong><small>Consultas online (demo)</small></span><span class="arrow">→</span></button>
+          </div>
+
+          <div class="section-heading"><div><h2>Próximos passos</h2><p class="muted">Exemplo de informações importantes</p></div></div>
+          <div class="bottom-grid">
+            <article class="panel reminder-panel"><div class="panel-title"><span class="small-icon">◷</span><h3>Próxima consulta</h3></div><p class="large-value">Nenhuma consulta real</p><p class="muted">Você pode experimentar o fluxo de agendamento demonstrativo.</p><button class="button button-primary" data-page="consultas">Explorar agendamento</button></article>
+            <article class="panel access-panel"><div class="panel-title"><span class="small-icon">♿</span><h3>Acessibilidade</h3></div><p>Personalize a leitura para navegar com mais conforto.</p><div class="access-buttons"><button class="button button-outline" id="accessFont">Aumentar texto</button><button class="button button-outline" id="accessContrast">Alto contraste</button></div></article>
+          </div>
+        </section>
+
+        <section class="page-section" id="page-consultas">
+          <div class="page-title-row"><div><p class="eyebrow">ATENDIMENTO</p><h1>Consultas</h1><p class="muted">Agende uma consulta demonstrativa ou consulte os registros de exemplo.</p></div><span class="status-pill status-blue">Protótipo</span></div>
+          <div class="tabs" role="tablist" aria-label="Seções de consultas"><button class="tab active" data-tab="agendar">Agendar consulta</button><button class="tab" data-tab="marcadas">Consultas marcadas</button><button class="tab" data-tab="historico-consultas">Histórico</button></div>
+          <div class="tab-panel active" id="tab-agendar">
+            <article class="panel">
+              <div class="panel-title"><span class="quick-icon purple">▦</span><div><h2>Agendamento de consulta</h2><p class="muted">Siga as etapas para testar o fluxo descrito no projeto.</p></div></div>
+              <div class="stepper"><div class="step active" data-step-indicator="1"><span>1</span><small>Especialidade</small></div><div class="step-line"></div><div class="step" data-step-indicator="2"><span>2</span><small>Profissional</small></div><div class="step-line"></div><div class="step" data-step-indicator="3"><span>3</span><small>Data e horário</small></div><div class="step-line"></div><div class="step" data-step-indicator="4"><span>4</span><small>Confirmação</small></div></div>
+              <form id="appointmentForm">
+                <div class="form-step active" data-form-step="1"><h3>1. Escolha a especialidade</h3><p class="muted">Selecione uma opção para continuar.</p><div class="field"><label for="specialty">Especialidade</label><select id="specialty" required><option value="">Selecione uma especialidade</option><option>Pediatria</option><option>Clínica Geral</option><option>Cardiologia</option><option>Dermatologia</option><option>Ginecologia</option></select></div><button class="button button-primary next-step" type="button">Continuar <span>→</span></button></div>
+                <div class="form-step" data-form-step="2"><h3>2. Escolha o profissional</h3><p class="muted">Profissionais fictícios para demonstração.</p><div class="field"><label for="doctor">Profissional</label><select id="doctor" required><option value="">Selecione um profissional</option><option>Dra. Ana Martins</option><option>Dr. Rafael Costa</option><option>Dra. Beatriz Lima</option></select></div><div class="form-actions"><button class="button button-outline prev-step" type="button">Voltar</button><button class="button button-primary next-step" type="button">Continuar →</button></div></div>
+                <div class="form-step" data-form-step="3"><h3>3. Escolha a data e o horário</h3><p class="muted">Os horários abaixo não representam disponibilidade real.</p><div class="field"><label for="appointmentDate">Data desejada</label><input id="appointmentDate" type="date" required></div><div class="field"><label for="appointmentTime">Horário disponível (demo)</label><select id="appointmentTime" required><option value="">Selecione um horário</option><option>08:00</option><option>09:30</option><option>10:30</option><option>13:00</option><option>14:30</option></select></div><div class="form-actions"><button class="button button-outline prev-step" type="button">Voltar</button><button class="button button-primary next-step" type="button">Revisar dados →</button></div></div>
+                <div class="form-step" data-form-step="4"><h3>4. Revise e confirme</h3><p class="muted">Confira as informações antes de concluir a demonstração.</p><div class="summary-box" id="appointmentSummary"></div><div class="demo-warning">A confirmação ficará salva apenas nesta página, durante esta sessão. Não é um agendamento médico real.</div><div class="form-actions"><button class="button button-outline prev-step" type="button">Voltar</button><button class="button button-success" type="submit">Confirmar demonstração ✓</button></div></div>
+              </form>
+              <div class="success-message" id="appointmentSuccess" hidden><span class="success-check">✓</span><h3>Etapas concluídas!</h3><p>O agendamento de demonstração foi registrado nesta página.</p><button class="button button-primary" id="newAppointment" type="button">Fazer outra demonstração</button></div>
+            </article>
+          </div>
+          <div class="tab-panel" id="tab-marcadas"><article class="panel"><h2>Consultas marcadas</h2><p class="muted">Os itens abaixo são exemplos, não compromissos reais.</p><div id="appointmentsList" class="empty-state"><span>▦</span><strong>Nenhuma demonstração concluída nesta sessão</strong><p>Use a aba “Agendar consulta” para testar o fluxo.</p></div></article></div>
+          <div class="tab-panel" id="tab-historico-consultas"><article class="panel"><h2>Histórico de consultas</h2><div class="record-row"><span class="record-icon purple">▦</span><div><strong>Consulta de Clínica Geral</strong><p class="muted">Registro ilustrativo · 12/08/2026</p></div><span class="status-pill status-gray">Exemplo</span></div><div class="record-row"><span class="record-icon purple">▦</span><div><strong>Consulta de Pediatria</strong><p class="muted">Registro ilustrativo · 04/06/2026</p></div><span class="status-pill status-gray">Exemplo</span></div></article></div>
+        </section>
+
+        <section class="page-section" id="page-exames">
+          <div class="page-title-row"><div><p class="eyebrow">RESULTADOS E SOLICITAÇÕES</p><h1>Meus exames</h1><p class="muted">Consulte resultados, solicitações pendentes e histórico fictício.</p></div><span class="status-pill status-blue">Dados de exemplo</span></div>
+          <div class="stats-grid"><article class="stat-card"><span class="quick-icon blue">▤</span><div><p class="muted">Resultados disponíveis</p><h2>2</h2></div></article><article class="stat-card"><span class="quick-icon orange">◷</span><div><p class="muted">Solicitações pendentes</p><h2>1</h2></div></article><article class="stat-card"><span class="quick-icon green">✓</span><div><p class="muted">No histórico</p><h2>5</h2></div></article></div>
+          <article class="panel"><div class="panel-title"><div><h2>Resultados de exames</h2><p class="muted">Arquivos e resultados meramente ilustrativos.</p></div><div class="search-wrap"><span>⌕</span><input id="examSearch" type="search" placeholder="Buscar exame..." aria-label="Buscar exame"></div></div><div class="table-wrap"><table><thead><tr><th>Exame</th><th>Data</th><th>Status</th><th>Ação</th></tr></thead><tbody id="examRows"><tr><td><strong>Hemograma completo</strong><small>Laboratório demonstrativo</small></td><td>10/09/2026</td><td><span class="status-pill status-green">Disponível</span></td><td><button class="text-button view-exam" data-exam="Hemograma completo">Ver resultado</button></td></tr><tr><td><strong>Glicemia em jejum</strong><small>Laboratório demonstrativo</small></td><td>08/09/2026</td><td><span class="status-pill status-green">Disponível</span></td><td><button class="text-button view-exam" data-exam="Glicemia em jejum">Ver resultado</button></td></tr><tr><td><strong>Ultrassonografia</strong><small>Solicitação ilustrativa</small></td><td>15/10/2026</td><td><span class="status-pill status-orange">Pendente</span></td><td><button class="text-button view-exam" data-exam="Ultrassonografia">Ver detalhes</button></td></tr></tbody></table></div><p class="table-footnote">Não utilize estas informações para decisões de saúde. Não são resultados clínicos reais.</p></article>
+        </section>
+
+        <section class="page-section" id="page-vacinas">
+          <div class="page-title-row"><div><p class="eyebrow">IMUNIZAÇÃO</p><h1>Vacinas</h1><p class="muted">Carteira, agendamento e histórico de vacinação de demonstração.</p></div></div>
+          <div class="quick-grid two-col"><article class="panel"><span class="quick-icon green">✚</span><h2>Carteira de vacinação</h2><p class="muted">Visualize registros fictícios organizados por data.</p><div class="record-row"><div><strong>Influenza</strong><p class="muted">Dose ilustrativa · 18/04/2026</p></div><span class="status-pill status-green">Registrada</span></div><div class="record-row"><div><strong>Hepatite B</strong><p class="muted">Dose ilustrativa · 02/02/2026</p></div><span class="status-pill status-green">Registrada</span></div></article><article class="panel"><span class="quick-icon blue">▦</span><h2>Agendar vacina</h2><p class="muted">Teste um formulário simples. Ele não realiza agendamento real.</p><form id="vaccineForm"><div class="field"><label for="vaccineType">Vacina</label><select id="vaccineType" required><option value="">Selecione</option><option>Influenza</option><option>Hepatite B</option><option>COVID-19</option><option>Outra (demonstração)</option></select></div><div class="field"><label for="vaccineDate">Data desejada</label><input id="vaccineDate" type="date" required></div><button class="button button-primary" type="submit">Enviar solicitação demo</button></form></article></div><article class="panel section-gap"><h2>Histórico de vacinação</h2><div class="record-row"><span class="record-icon green">✓</span><div><strong>Registro de vacinação</strong><p class="muted">Exemplo de histórico · 2025</p></div><span class="status-pill status-gray">Ilustrativo</span></div></article>
+        </section>
+
+        <section class="page-section" id="page-medicamentos">
+          <div class="page-title-row"><div><p class="eyebrow">TRATAMENTO</p><h1>Medicamentos</h1><p class="muted">Organização demonstrativa de medicamentos em uso, receitas e Farmácia Popular.</p></div></div>
+          <div class="quick-grid two-col"><article class="panel"><div class="panel-title"><span class="quick-icon green">▥</span><div><h2>Medicamentos em uso</h2><p class="muted">Dados fictícios, sem orientação médica.</p></div></div><div class="record-row"><div><strong>Medicamento de exemplo A</strong><p class="muted">Dosagem não especificada · registro ilustrativo</p></div><span class="status-pill status-gray">Exemplo</span></div><div class="record-row"><div><strong>Medicamento de exemplo B</strong><p class="muted">Consulte sempre um profissional de saúde.</p></div><span class="status-pill status-gray">Exemplo</span></div></article><article class="panel"><div class="panel-title"><span class="quick-icon blue">▤</span><div><h2>Receitas médicas</h2><p class="muted">Área ilustrativa para documentos.</p></div></div><div class="empty-state compact"><span>▤</span><strong>Nenhuma receita real disponível</strong><p>Este protótipo não armazena receitas.</p></div></article></div><article class="panel section-gap"><div class="panel-title"><span class="quick-icon orange">＋</span><div><h2>Farmácia Popular</h2><p class="muted">Área informativa prevista no sitemap do projeto.</p></div></div><p>Consulte os canais oficiais do Governo Federal para informações atualizadas sobre programas, estabelecimentos e critérios de acesso.</p><button class="button button-outline" id="officialInfo">Entendi</button></article>
+        </section>
+
+        <section class="page-section" id="page-prontuario">
+          <div class="page-title-row"><div><p class="eyebrow">INFORMAÇÕES DE SAÚDE</p><h1>Prontuário</h1><p class="muted">Área demonstrativa de histórico médico, consultas anteriores e documentos.</p></div></div>
+          <div class="quick-grid two-col"><article class="panel"><span class="quick-icon purple">▧</span><h2>Histórico médico</h2><p class="muted">Nenhum dado clínico real é utilizado neste protótipo.</p><div class="record-row"><div><strong>Registro de exemplo</strong><p class="muted">Informação fictícia para visualizar a estrutura.</p></div><span class="status-pill status-gray">Demo</span></div></article><article class="panel"><span class="quick-icon blue">▤</span><h2>Consultas anteriores</h2><div class="record-row"><div><strong>Consulta ilustrativa</strong><p class="muted">Registro sem valor clínico · 12/08/2026</p></div></div><h2 class="subheading">Documentos de saúde</h2><p class="muted">O sistema real exigiria autenticação e proteção de dados para acessar documentos.</p></article></div>
+        </section>
+
+        <section class="page-section" id="page-fila">
+          <div class="page-title-row"><div><p class="eyebrow">ATENDIMENTO PRESENCIAL</p><h1>Token Fila</h1><p class="muted">Exemplo visual para gerar e acompanhar um token de fila.</p></div></div>
+          <article class="panel centered-panel"><div class="big-round-icon teal">◷</div><h2>Fila de atendimento</h2><p class="muted">Este recurso é apenas demonstrativo e não se conecta a unidades de saúde.</p><div class="token-display" id="tokenDisplay"><small>SEU TOKEN DEMO</small><strong>— — —</strong><span>Nenhum token gerado</span></div><button class="button button-primary" id="generateToken">Gerar token demonstrativo</button><p class="table-footnote">Não use este token em uma unidade de saúde.</p></article>
+        </section>
+
+        <section class="page-section" id="page-telemedicina">
+          <div class="page-title-row"><div><p class="eyebrow">ATENDIMENTO ONLINE</p><h1>Telemedicina</h1><p class="muted">Área ilustrativa para agendamento e consultas online.</p></div></div>
+          <div class="quick-grid two-col"><article class="panel"><span class="quick-icon blue">▦</span><h2>Agendar teleconsulta</h2><p class="muted">Selecione uma data de interesse para testar a interface.</p><form id="teleForm"><div class="field"><label for="teleSpecialty">Especialidade</label><select id="teleSpecialty" required><option value="">Selecione</option><option>Clínica Geral</option><option>Psicologia</option><option>Nutrição</option><option>Outra (demonstração)</option></select></div><div class="field"><label for="teleDate">Data desejada</label><input id="teleDate" type="date" required></div><button class="button button-primary" type="submit">Solicitar demo</button></form></article><article class="panel"><span class="quick-icon purple">▣</span><h2>Consultas online</h2><div class="empty-state"><span>▣</span><strong>Nenhuma teleconsulta real</strong><p>O protótipo não realiza chamadas de vídeo nem conecta profissionais.</p></div></article></div>
+        </section>
+
+        <section class="page-section" id="page-perfil">
+          <div class="page-title-row"><div><p class="eyebrow">CONTA DO CIDADÃO</p><h1>Meu perfil</h1><p class="muted">Dados de exemplo e preferências de acessibilidade.</p></div></div>
+          <article class="panel profile-panel"><div class="profile-hero"><span class="avatar avatar-large">U</span><div><h2>Usuário de Demonstração</h2><p class="muted">Perfil fictício · sem conta autenticada</p></div><span class="status-pill status-gray">Demo</span></div><form id="profileForm" class="profile-form"><div class="field"><label for="profileName">Nome demonstrativo</label><input id="profileName" value="Usuário de Demonstração" required></div><div class="field"><label for="profileEmail">E-mail de exemplo</label><input id="profileEmail" type="email" value="usuario@example.com" required></div><div class="field"><label for="profilePhone">Telefone fictício</label><input id="profilePhone" value="(00) 00000-0000"></div><div class="field"><label for="profileAddress">Endereço de exemplo</label><input id="profileAddress" value="Não informado"></div><button class="button button-primary" type="submit">Salvar nesta sessão</button></form><div class="demo-warning section-gap">Em um sistema real, dados pessoais e informações de saúde exigem autenticação segura, controle de acesso e proteção de dados.</div></article>
+          <article class="panel section-gap"><h2>Configurações de acessibilidade</h2><p class="muted">Use os controles para testar preferências visuais.</p><div class="setting-row"><div><strong>Aumentar tamanho do texto</strong><p class="muted">Amplia o texto da interface.</p></div><button class="button button-outline" id="profileFont">Aumentar texto A+</button></div><div class="setting-row"><div><strong>Alto contraste</strong><p class="muted">Aumenta a diferença entre texto e fundo.</p></div><button class="button button-outline" id="profileContrast">Alternar contraste</button></div><div class="setting-row"><div><strong>Modo escuro</strong><p class="muted">Alterna o tema visual.</p></div><button class="button button-outline" id="profileTheme">Alternar tema</button></div></article>
+        </section>
+
+        <footer class="footer"><span>Meu SUS Digital · Projeto acadêmico de UX/UI</span><span>Protótipo não oficial · Dados fictícios</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
